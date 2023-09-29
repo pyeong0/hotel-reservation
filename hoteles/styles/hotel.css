@@ -1,0 +1,40 @@
+html {
+	scroll-behavior: smooth;
+}
+h1 { font-size: 2em; }
+#services p {
+	padding-left: 50px;
+	display: inline-block;
+	width: 48%;
+}
+#services p::before { content: '✓ '; }
+.image {
+	width: 100%;
+	height: 600px;
+	background-size: cover;
+}
+
+/* MENÚ */
+
+.menu {
+	position: sticky;
+	top: 0;
+	background-color: #333;
+	text-align: center;
+}
+
+.menu a {
+	padding: 5px;
+	margin: 5px;
+	font-size: 28px;
+}
+
+#summary:target, #location:target, #services:target {
+	background-color: #333;
+	transition-duration: 1s;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	#services p { width: 90%; }
+}

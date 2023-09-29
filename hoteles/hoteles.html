@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="hoteles.html">Hoteles</a></li>							
+				<!-- <li class="login"><a href="">Initiate session</a></li> -->
+			</ul>
+		</nav>
+
+		<form id="seek-hotel">
+			<ul>
+				<li>
+					<label for="where-to">목적지</label>
+					<input type="text" id="where-to" name="where-to" size="34" placeholder="일본, 호주, 캐나다 ..." required>
+				</li>
+				<li>
+					<label for="entrance">출발</label>
+					<input type="date" id="entrance" name="entrance" required>
+				</li>
+				<li>
+					<label for="exit">도착</label>
+					<input type="date" id="exit" name="exit" required>
+				</li>
+				<li>
+					<label for="rooms">예약</label>
+					<select name="rooms" id="rooms">
+						<option value="1-1h">성인 1명, 방 1개</option>
+						<option value="2-1h">성인 2명, 방 1개</option>
+						<option value="1-1n">성인 1명, 어린이 1명</option>
+						<option value="2-1n">성인 2명, 어린이 1명</option>
+						<option value="2-2n">성인 2명, 어린이 2명</option>
+					</select>
+				</li>
+				<li><input type="submit" value="찾기"></li>
+			</ul>
+		</form>
+	</header>
+
+	<main>
+		<div class="hotel col-2 col-3">
+			<h1>A 호텔</h1>
+			<img src="images/hard-rock-hotel-landfruit.jpg" alt="A 호텔">
+			<p>라운지와 야외 수영장을 갖춘 럭셔리호텔</p>
+			<a href="hard-rock-hotel-landfruit.html" class="reservar"></a>
+			<a href="hard-rock-hotel-landfruit.html#location" class="comments"></a>
+			<div class="stars">⭐⭐⭐⭐⭐</div>
+		</div>
+
+		<div class="hotel col-2 col-3">		
+			<h1>B 호텔</h1>
+			<img src="images/iberostar-heritage-grand-mencey.png" alt="B 호텔">		
+			<p>4개의 레스토랑과 라운지가 있는 럭셔리 호텔,</p>
+			<a class="reservar" href=""></a>
+			<a class="comments" href=""></a>					
+			<div class="stars">⭐⭐⭐⭐⭐</div>
+		</div>
+
+		<div class="hotel col-2 col-3">		
+			<h1>C 호텔</h1>
+			<img src="images/landmar-costa-los-gigantes.png" alt="C 호텔">		
+			<p>근처에 무료 워터파크가 있는 4성급 호텔</p>
+			<a class="reservar" href=""></a>
+			<a class="comments" href=""></a>				
+			<div class="stars">⭐⭐⭐⭐</div>
+		</div>
+
+		<div class="hotel col-2 col-3">		
+			<h1>D 호텔</h1>
+			<img src="images/best-western-plus-hotel-invierno.png" alt="D 호텔">		
+			<p>스파 이용이 가능한 4성급 호텔</p>
+			<a class="reservar" href=""></a>
+			<a class="comments" href=""></a>					
+			<div class="stars">⭐⭐⭐⭐</div>
+		</div>
+
+		<div class="hotel col-2 col-3">		
+			<h1>E 호텔</h1>
+			<img src="images/hotel-77-seventy-seven.png" alt="E 호텔">		
+			<p>역이 가까운 스파 이용 가능한 4성급 호텔</p>
+			<a class="reservar" href=""></a>
+			<a class="comments" href=""></a>					
+			<div class="stars">⭐⭐⭐⭐</div>
+		</div>	
+
+		<div class="hotel col-2 col-3">		
+			<h1>F 호텔</h1>
+			<img src="images/hotel-splendide-royal-rome.png" alt="F 호텔">		
+			<p> 2 개의 레스토랑을 갖춘 럭셔리 호텔.</p>
+			<a class="reservar" href=""></a>
+			<a class="comments" href=""></a>				
+			<div class="stars">⭐⭐⭐⭐⭐</div>
+		</div>
+
+
+		<div id="pageing">
+			<a href="">&laquo;</a>
+			<a href="" class="active">1</a>
+			<a href="">2</a>
+			<a href="">3</a>
+			<a href="">4</a>
+			<a href="">5</a>
+			<a href="">&raquo;</a>
+		</div>
+	</main>
+
+	<footer>
+		<ul>
+			<li><a href="termination/term.html">이용약관</a></li>
+			<li><a href="termination/politics-of-privacy.html">개인정보 정책</a></li>
+			<li><a href="termination/membership.html">멤버쉽</a></li>
+		</ul>
+		<p>Copyright © EunPyeong. Right Reserved.</p>
+	</footer>
+
+</body>
+</html>

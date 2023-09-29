@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles/hotel.css">
+</head>
+<body id="su">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="hoteles.html">Hoteles</a></li>
+				<!-- <li class="login"><a href="">Initiate session</a></li> -->
+			</ul>
+		</nav>
+
+		<form id="seek-hotel">
+			<ul>
+				<li>
+					<label for="where-to">목적지</label>
+					<input type="text" id="where-to" name="where-to" size="34" placeholder="일본, 호주, 캐나다 ..." required>
+				</li>
+				<li>
+					<label for="entrance">출발</label>
+					<input type="date" id="entrance" name="entrance" required>
+				</li>
+				<li>
+					<label for="exit">도착</label>
+					<input type="date" id="exit" name="exit" required>
+				</li>
+				<li>
+					<label for="rooms">예약</label>
+					<select name="rooms" id="rooms">
+						<option value="1-1h">성인 1명, 방 1개</option>
+						<option value="2-1h">성인 2명, 방 1개</option>
+						<option value="1-1n">성인 1명, 어린이 1명</option>
+						<option value="2-1n">성인 2명, 어린이 1명</option>
+						<option value="2-2n">성인 2명, 어린이 2명</option>
+					</select>
+				</li>
+				<li><input type="submit" value="찾기"></li>
+			</ul>
+		</form>
+
+		<div class="image" style="background-image: url('images/hard-rock-hotel-landfruit.jpg');"></div>
+	</header>
+
+	<main>
+
+		<div id="summary">
+			<br>
+			<h1>A Hotel</h1>	
+			<h1>Hard Rock Hotel</h1>	
+			<p>
+			<P>Hard Rock Hotel 은 공항 셔틀 서비스, 3개의 수영장 등 다양한 서비스를 제공합니다. 검은 모래, 일광욕 의자, 파라솔을 갖춘 이 단지는 태양을 즐기기에 이상적인 장소입니다. 구내 스파에서는 페이셜, 마사지, 매니큐어 및 페디큐어 등의 서비스를 제공합니다. 6개의 구내 레스토랑에서는 이탈리아 요리를 선보입니다. 체육관과 농구, 배구 등 다양한 활동을 즐겨보세요. 옥상 테라스, 시설 내 쇼핑 등의 편의 시설을 찾으실 수 있습니다. 또한, 객실 내에서 무료 Wi-Fi에 연결할 수 있습니다.</P>
+			</p>
+		</div>
+		<div id="location">
+			<br><br>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.835163926515!2d-16.77786044865054!3d28.121053282537147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a911c471a79fb%3A0xc3536f1cf2873e6d!2sHard%20Rock%20Hotel%20Tenerife!5e0!3m2!1ses!2ses!4v1663519496439!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<br><br><br>
+		</div>
+
+		<div id="services">
+			<br><br>				
+			<p>야외 수영장 4개, 일광욕 의자, 파라솔이 있는 어린이 수영장</p>
+			<p>조식 뷔페, 무료 쇼핑몰 셔틀 및 주차</p>
+			<p>트리트먼트룸 또는 마사지실, 회의실 7개 및 컨시어지 서비스</p>
+			<p>도어맨, 엘리베이터, 관광 지원 및 티켓 구매</p>
+			<p>보육 서비스 및 무료 어린이용 침대</p>
+			<p>디자이너 세면도구, 샤워기, 헤어드라이어</p>
+			<p>위성 채널을 시청할 수 있는 TV</p>
+			<p>LED 전구, 무료 티백, 인스턴트 커피, 난방 시설</p>
+			<p>해변가</p>
+			<p>6개 레스토랑</p>
+			<p>6개의 라운지 및 3개의 수영장</p>
+			<p>풀스파</p>
+			<p>야외 수영장 4개</p>
+			<p>옥상 테라스</p>
+			<p>아침 식사 가능</p>
+			<p>무료 키즈 클럽</p>
+			<p>무료 셔틀 서비스</p>
+			<p>체육관</p>
+			<p>주차가능</p>
+			<p>무료 Wi-Fi</p>
+		</div>
+	</main>
+	<footer>
+		<ul>
+			<li><a href="termination/term.html">이용약관</a></li>
+			<li><a href="termination/politics-of-privacy.html">개인정보 정책</a></li>
+			<li><a href="termination/membership.html">멤버쉽</a></li>
+		</ul>
+		<p>Copyright © EunPyeong. Right Reserved.</p>
+	</footer>
+	
+</body>
+</html>

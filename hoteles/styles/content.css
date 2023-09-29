@@ -1,0 +1,90 @@
+/* content */
+
+main {
+	width: 100%;
+	max-width: 1560px;
+	margin: auto;
+	padding-bottom: 100px;
+}
+
+.hotel {
+	height: 450px;
+	padding: 20px 6px;
+	margin-bottom: 20px;
+	outline: 5px solid transparent;
+	outline-offset: -2px;
+	border-radius: 10px;
+	float: left;
+	cursor: context-menu;
+	overflow: hidden;
+
+	transition-property: background-color color outline;
+	transition-duration: .2s;
+}
+.hotel img {
+	width: 100%;
+	height: 250px;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+}
+.hotel p {
+	width: 100%;
+	height: 100px;
+	overflow: auto;
+}
+.reservar::before { content: 'Reservar Hotel'; }
+.comments::before { content: 'Showing comments'; }
+.reservar, .comments {
+	position: relative;
+	margin: 5px;
+	font-size: 22px;
+	color: var(--text);
+	background-color: var(--background);
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	opacity: 0;
+}
+.reservar {
+	top: -155px;
+	float: left;
+}
+.comments {
+	top: -155px;
+	float: right;
+}
+.stars {
+	position: relative;
+	top: -375px;
+	font-size: 12px;
+	text-align: center;
+	opacity: 0;
+}
+
+
+.hotel:hover {
+	background-color: var(--background-2);
+	color: var(--text-2);
+	outline: 5px solid var(--outline);
+}
+.reservar:hover {
+	background-color: limegreen;
+	color: var(--text-2);
+}
+.comments:hover {
+	background-color: var(--background-2);
+	color: var(--text-2);
+}
+.hotel:hover .reservar, .hotel:hover .comments, .hotel:hover .stars {
+	opacity: 1;
+}
+
+/* SCROLL */ 
+
+.hotel p::-webkit-scrollbar {
+	width: 10px;
+}
+.hotel p::-webkit-scrollbar-thumb {
+	background-color: var(--background);
+	border-radius: 10px;
+}

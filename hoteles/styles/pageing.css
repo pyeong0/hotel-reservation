@@ -1,0 +1,19 @@
+#pageing {
+	width: 310px;
+	margin: auto;
+	clear: both;
+}
+#pageing a {
+	float: left;
+	padding: 8px 16px;
+	margin-right: 3px;
+	background-color: var(--background-2);
+	color: var(--text-2);
+	border-radius: 10px;
+}
+#pageing .active {
+	background-color: var(--background);
+}
+#pageing a:hover {
+	transform: scale(1.1);
+}

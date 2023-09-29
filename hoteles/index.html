@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Reservation</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		body {
+			background-image: url('images/hoteles.jpg');
+			background-size: cover;
+			overflow-y: hidden;
+		}
+		nav { animation: ba .5s .75s backwards; }
+		h1 { font-size: 2em; }
+		footer {
+			position: absolute;
+			bottom: 0;
+			animation: su .5s .75s backwards;
+		}
+		@keyframes su {
+			from { transform: translateY(200px); }
+			to { transform: translateY(0); }
+		}
+		@keyframes ba {
+			from { transform: translateY(-100px); }
+			to { transform: translateY(0); }
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="hoteles.html">Hoteles</a></li>
+			<!-- <li class="login"><a href="">Initiate session</a></li> -->
+		</ul>
+	</nav>
+
+	<br><br><br><br>
+	<h1>호텔예약 서비스</h1>
+	<form id="seek-hotel">
+		<ul>
+			<li>
+				<label for="where-to">목적지</label>
+				<input type="text" id="where-to" name="where-to" size="34" placeholder="일본, 호주, 캐나다 ..." required>
+			</li>
+			<li>
+				<label for="entrance">출발</label>
+				<input type="date" id="entrance" name="entrance" required>
+			</li>
+			<li>
+				<label for="exit">도착</label>
+				<input type="date" id="exit" name="exit" required>
+			</li>
+			<li>
+				<label for="rooms">예약</label>
+				<select name="rooms" id="rooms">
+					<option value="1-1h">성인 1명, 방 1개</option>
+					<option value="2-1h">성인 2명, 방 1개</option>
+					<option value="1-1n">성인 1명, 어린이 1명</option>
+					<option value="2-1n">성인 2명, 어린이 1명</option>
+					<option value="2-2n">성인 2명, 어린이 2명</option>
+				</select>
+			</li>
+			<li><input type="submit" value="찾기"></li>
+		</ul>
+	</form>
+	<br>
+	<!-- <h2>원하시는 목적지를 선택하세요</h2> -->
+
+	<footer>
+		<ul>
+			<li><a href="termination/term.html">이용약관</a></li>
+			<li><a href="termination/politics-of-privacy.html">개인정보 정책</a></li>
+			<li><a href="termination/membership.html">멤버쉽</a></li>
+		</ul>
+		<p>Copyright © EunPyeong. Right Reserved.</p>
+	</footer>
+</body>
+</html>

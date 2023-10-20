@@ -32,8 +32,8 @@ main {
 	height: 100px;
 	overflow: auto;
 }
-.reservar::before { content: 'Reservar Hotel'; }
-.comments::before { content: 'Showing comments'; }
+.reservar::before { content: '호텔예약'; }
+.comments::before { content: '호텔정보'; }
 .reservar, .comments {
 	position: relative;
 	margin: 5px;

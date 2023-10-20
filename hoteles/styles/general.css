@@ -4,7 +4,7 @@
 :root {
 	--background: #f9f9f9;
 	--background-2: rgba(20,20,20,.8);
-	--text: #666;
+	--text: black;
 	--text-2: #eee;
 	--outline: #ddd;
 }
@@ -27,6 +27,11 @@ body {
 	font-size: 24px;
 	font-weight: 600;
 }
+/* body { */
+	/* background-image: url('images/hoteles.jpg');  */
+	/* background-size: cover; */
+	/* overflow-y: hidden; */
+/* } */
 h1,h2 {
 	font-size: 32px;
 	margin: 0;
